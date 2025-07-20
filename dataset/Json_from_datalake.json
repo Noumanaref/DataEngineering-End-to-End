@@ -1,0 +1,33 @@
+{
+	"name": "Json_from_datalake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "StorageLinkedService02",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "soucejson.json",
+				"fileSystem": "parameters02"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"url_Relative_Dynamic": {
+					"type": "string"
+				},
+				"parameterized_folder": {
+					"type": "string"
+				},
+				"parameterized_file": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

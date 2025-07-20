@@ -1,0 +1,9 @@
+{
+	"name": "nomiproject-datafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a8e92063-0f9d-49b5-b8fe-9b06ddaab114",
+		"tenantId": "0431b346-c941-47de-9437-d9e2230409e8"
+	}
+}

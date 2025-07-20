@@ -1,0 +1,25 @@
+{
+	"name": "Dataset_Datastorage_Destination",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "StorageLinkedService02",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "calender.csv",
+				"folderPath": "Calendar",
+				"fileSystem": "bronzelayertest02"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
